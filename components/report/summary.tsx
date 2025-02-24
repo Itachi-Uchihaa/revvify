@@ -16,7 +16,7 @@ export function ReportSummary() {
             <CheckCircle className="h-5 w-5 text-green-500" />
             <div>
               <div className="font-medium">{item.label}</div>
-              <div className="text-sm text-muted-foreground">Tout a l'air bien</div>
+              <div className="text-sm text-muted-foreground">{"Tout a l'air bien"}</div>
             </div>
           </CardContent>
         </Card>

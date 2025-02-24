@@ -47,10 +47,10 @@ export function Equipment() {
             <div className="rounded-full bg-green-500/20 p-1">
               <Check className="h-4 w-4 text-green-500" />
             </div>
-            <span className="font-medium">Norme d'émission : Euro 6</span>
+            <span className="font-medium">{"Norme d'émission : Euro 6"}</span>
           </div>
           <p className="mt-2 text-sm text-muted-foreground">
-            Ce véhicule respecte les normes d'émissions européennes les plus récentes
+            {"Ce véhicule respecte les normes d'émissions européennes les plus récentes"}
           </p>
         </div>
       </CardContent>

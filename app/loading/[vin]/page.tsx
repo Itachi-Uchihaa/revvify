@@ -6,7 +6,13 @@ import { Card } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 import { Search, CheckCircle } from "lucide-react"
 
-export default function LoadingPage({ params }: { params: { vin: string } }) {
+interface PageProps {
+    params: {
+      vin: string
+    }
+  }
+
+export default function LoadingPage({ params }: PageProps) {
   const [progress, setProgress] = useState(0)
   const [currentStep, setCurrentStep] = useState(0)
   const router = useRouter()
@@ -45,7 +51,7 @@ export default function LoadingPage({ params }: { params: { vin: string } }) {
         <div className="text-center">
           <Search className="mx-auto h-12 w-12 animate-pulse text-primary" />
           <h2 className="mt-4 text-xl font-bold">Recherche en cours</h2>
-          <p className="mt-2 text-sm text-muted-foreground">VIN: {params.vin}</p>
+            <p className="mt-2 text-sm text-muted-foreground">VIN: {params.vin}</p>
         </div>
 
         <Progress value={progress} className="mt-8" />

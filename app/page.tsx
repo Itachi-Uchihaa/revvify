@@ -12,7 +12,7 @@ export default function HomePage() {
         <div className="container relative space-y-6 px-4 py-12 sm:px-6 sm:py-16 md:py-24 lg:py-32">
           <div className="mx-auto max-w-[64rem] space-y-4 text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-              Découvrez l'historique complet de votre futur véhicule
+              {"Découvrez l'historique complet de votre futur véhicule"}
             </h1>
             <p className="mx-auto max-w-[42rem] text-base leading-normal text-muted-foreground sm:text-lg sm:leading-8">
               Plus de 900 sources de données dans 35 pays pour vous aider à faire le bon choix
